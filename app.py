@@ -8,7 +8,7 @@ st.title("🚢 Titanic Chatbot")
 query = st.text_input("Ask me about the Titanic dataset:")
 
 if query:
-    response = requests.get(f"http://127.0.0.1:8000/query?text={query}").json()
+    response = requests.get(f"https://titanicchartbot.onrender.com/query?text={query}").json()
 
     # Handle text responses
     if "answer" in response:
